@@ -1,0 +1,72 @@
+/**
+ * @file Officer.h
+ * @author Jesse Doescher
+ * @date 2023-11-16
+ * @brief This is the Officer Header file
+ * 
+ * It initializes all officer-related functions
+ */
+
+#ifndef OFFICER_H
+#define OFFICER_H
+
+#include "Employee.h"
+
+
+/**
+ * This is the Officer Class, which uses Employee as a baseline
+ *
+ * @class Officer Officer.h "Employees/Officer.h"
+ * @brief Class for Officers
+ *
+ */
+class Officer : public Employee {
+ private:
+  double evilness;
+ public:
+
+/**
+ * This function prints the officer-related stuff
+ *
+ * @pre 
+ * @return void 
+ * @post 
+ * 
+ */
+  void print();
+
+/**
+ * This function calculates the pay of officers
+ *
+ * @pre 
+ * @return double 
+ * @post 
+ * 
+ */
+  double calculatePay();
+
+/**
+ * This function is the initializer for Officer
+ *
+ * @pre 
+ * @post 
+ * 
+ */
+  Officer();
+
+/**
+ * this function creates a new officer
+ *
+ * @param int ID 
+ * @param int years 
+ * @param double hourlyRate 
+ * @param float hoursWorked 
+ * @param double evilness 
+ * @pre 
+ * @post 
+ * 
+ */
+  Officer(int ID, int years, double hourlyRate, float hoursWorked, double evilness);
+};
+
+#endif //OFFICER_H
